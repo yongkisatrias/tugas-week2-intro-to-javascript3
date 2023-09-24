@@ -1,4 +1,4 @@
-// Program 1: Using Promises to Calculate Sums
+// Program 1: Using Promises to Calculate number
 function addNumbers(a, b) {
   return new Promise((resolve, reject) => {
     if (typeof a !== "number" || typeof b !== "number") {
@@ -15,10 +15,11 @@ addNumbers(5, 10)
     console.log(`Hasil penjumlahan: ${result}`);
   })
   .catch((error) => {
-    console.log(`Error: ${error.message}`);
+    console.log(error.message);
   });
+// Output : Hasil penjumlahan: 15
 
-// Program 2: Counting the Number of Odd Numbers in an Array
+// Program 2: Using Promises to counting the Number of Odd Numbers in an Array
 function countOddNumbers(numbers) {
   return new Promise((resolve, reject) => {
     if (!Array.isArray(numbers)) {
@@ -39,3 +40,4 @@ countOddNumbers(numbers)
   .catch((error) => {
     console.log(error.message);
   });
+// Output : Jumlah bilangan ganjil dalam array: 5
