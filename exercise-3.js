@@ -15,7 +15,7 @@ addNumbers(5, 10)
     console.log(`Hasil penjumlahan: ${result}`);
   })
   .catch((error) => {
-    console.error(`Error: ${error.message}`);
+    console.log(`Error: ${error.message}`);
   });
 
 // Program 2: Counting the Number of Odd Numbers in an Array
@@ -37,5 +37,5 @@ countOddNumbers(numbers)
     console.log(`Jumlah bilangan ganjil dalam array: ${result}`);
   })
   .catch((error) => {
-    console.error(error.message);
+    console.log(error.message);
   });
