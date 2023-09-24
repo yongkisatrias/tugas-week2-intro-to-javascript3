@@ -11,3 +11,14 @@ fetch("https://jsonplaceholder.typicode.com/users")
   .catch(() => {
     console.log("Terjadi kesalahan!"); // to handle errors
   });
+// Output =
+// Nama: Leanne Graham
+// Nama: Ervin Howell
+// Nama: Clementine Bauch
+// Nama: Patricia Lebsack
+// Nama: Chelsey Dietrich
+// Nama: Mrs. Dennis Schulist
+// Nama: Kurtis Weissnat
+// Nama: Nicholas Runolfsdottir V
+// Nama: Glenna Reichert
+// Nama: Clementina DuBuque
