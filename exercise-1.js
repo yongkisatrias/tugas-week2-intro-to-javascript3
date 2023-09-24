@@ -1,4 +1,4 @@
-const cekHariKerja = (day) => {
+const checkWorkingDay = (day) => {
   return new Promise((resolve, reject) => {
     setTimeout(() => {
       const dataDay = ["senin", "selasa", "rabu", "kamis", "jumat"];
@@ -15,7 +15,7 @@ const cekHariKerja = (day) => {
 };
 
 // Then catch
-const checkDay = cekHariKerja("senin");
+const checkDay = checkWorkingDay("senin");
 
 checkDay
   .then((result) => {
@@ -29,7 +29,7 @@ checkDay
 // Try catch using arrow function ES6
 const checkWorkDay = async () => {
   try {
-    const workingDay = await cekHariKerja("minggu");
+    const workingDay = await checkWorkingDay("minggu");
     console.log(`Hari ${workingDay} adalah hari kerja`);
   } catch (error) {
     console.log(error.message);
