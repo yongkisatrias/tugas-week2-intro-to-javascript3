@@ -20,4 +20,4 @@ const displayMonths = (error, months) => {
 };
 
 // Execute the getMonth function with the displayMonths callback
-getMonth(displayMonths);
+getMonth(displayMonths); // Output : Januari Februari Maret April Mei Juni Juli Agustus September Oktober November Desember
